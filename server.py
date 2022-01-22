@@ -29,8 +29,8 @@ def broadcast(message, sendTo):
                 decodedName = name.decode(FORMAT)
                 if decodedName == sendTo:
                     clients[nicknames.index(name)].send(message)
-                print(nicknames)
-                print(messageStorage)
+            print(nicknames)
+            print(messageStorage)
         else:
             messageStorage[sendTo] = message
 
